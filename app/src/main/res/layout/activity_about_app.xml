@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcolor"
+    tools:context=".about_app">
+    >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="256dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="24dp"
+        android:text="About"
+        android:textAlignment="center"
+        android:textColor="#b30059"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/aboutboxes"
+        android:orientation="vertical"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvpocr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingTop="5dp"
+            android:text="Prediction Of Cardiac Risk"
+            android:textAlignment="center"
+            android:textColor="#b30059"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="36dp" />
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/ytcr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            app:autoPlay="false"
+            app:showFullScreenButton="false"
+            app:videoId="BMekGnk8Y-k"
+            tools:layout_editor_absoluteX="36dp" />
+
+        <TextView
+            android:id="@+id/tvjtcr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="20dp"
+            android:textColor="@android:color/black"
+            android:text="Continous health data from smart wearables helps the users to keep track records of their activities,key KPI's and further predict the Cardiac risk with help of H-Car app.Also,its recommends the high risk situation and fixes an appointment with hospital"
+            android:textSize="15dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/aboutboxes"
+        app:layout_constraintTop_toBottomOf="@+id/ll1">
+
+        <TextView
+            android:id="@+id/tvpoxray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingTop="5dp"
+            android:text="Prediction On X-ray Images"
+            android:textAlignment="center"
+            android:textColor="#b30059"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="36dp" />
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/ytxray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            app:autoPlay="false"
+            app:showFullScreenButton="false"
+            app:videoId="9tskGoMhsRU"
+            tools:layout_editor_absoluteX="36dp" />
+        <TextView
+            android:id="@+id/tvjtxray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="36dp"
+            android:textSize="15dp"
+            android:padding="20dp"
+            android:textColor="@android:color/black"
+            android:text="Image analytics can be provide cost effective health solutions with symptoms identification,disease risk and other vital information.
+ Our H-care app addresses the Pneumonia diease symptoms and bone factures there by enables enhanced medical care."
+
+             />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/aboutboxes"
+        app:layout_constraintTop_toBottomOf="@+id/ll2">
+        <TextView
+            android:id="@+id/tvgva"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingTop="5dp"
+            android:text="Gesture-Video Analytics collaborated Care in Hospital/Home"
+            android:textAlignment="center"
+            android:textColor="#b30059"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/ytgva"
+            app:videoId="2EQClYVxGFQ"
+            app:autoPlay="false"
+            app:showFullScreenButton="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            tools:layout_editor_absoluteX="36dp"/>
+        <TextView
+            android:id="@+id/tvjtgva"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="36dp"
+            android:textSize="15dp"
+            android:padding="20dp"
+            android:textColor="@android:color/black"
+            android:text="The risk of falling is one of the most prevalent problems faced by elderly individuals.Delayed medical attention to falls is causing injury and death.
+ Most falls lead to hospitalization of the elderly,residing in nursing homes,and barriers to daily activites.Video Surveillance for fall detection can be used in the closed environments like old age homes,homes,
+ hospitals,rehabilitation,centers,etc."
+             />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/aboutboxes"
+        app:layout_constraintTop_toBottomOf="@+id/ll3">
+        <TextView
+            android:id="@+id/tvpdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingTop="5dp"
+            android:text="Readmission Prediction of Diabetic Patient"
+            android:textAlignment="center"
+            android:textColor="#b30059"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/ytdp"
+            app:videoId="PDRdYJ-e25Q"
+            app:autoPlay="false"
+            app:showFullScreenButton="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            />
+        <TextView
+            android:id="@+id/tvjtdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="36dp"
+            android:textSize="15dp"
+            android:padding="20dp"
+            android:textColor="@android:color/black"
+            android:text="Disease Diagnostics can be continously monitored by using health data from smart devices.H-care delivers solution on diabetic condition and helps to get an appointment from nearby hospital.Further,H-care maintains the long-term health data for future medicinal needs."
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

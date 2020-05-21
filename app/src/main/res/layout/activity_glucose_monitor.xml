@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:background="@drawable/backgroundcolor"
+    android:layout_height="match_parent"
+    tools:context=".Glucose_monitor">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="336dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="548dp"
+        android:background="@drawable/shadowbox"
+        android:padding="15dp"
+        android:text="Sync up data with Glucose\nMontior"
+        android:textAlignment="center"
+        android:textColor="#b30059"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="342dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="472dp"
+        android:background="@drawable/shadowbox"
+        android:padding="15dp"
+        android:text="Last Updated 1 day ago"
+        android:textAlignment="center"
+        android:textColor="#b30059"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="247dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="24dp"
+        android:text="Continuous Glucose Monitor"
+        android:textAlignment="center"
+        android:textColor="#b30059"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bluetopleftcell"
+                android:padding="15dp"
+                android:text="Timing\n(Averaged over\nlast one month)"
+                android:textAlignment="center"
+                android:textColor="#b30059"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="172dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bluetoprightcell"
+                android:padding="15dp"
+                android:text="Glucose level"
+                android:textAlignment="center"
+                android:textColor="#b30059"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/whitebox_with_border"
+                android:padding="20dp"
+                android:text="Fasting"
+                android:textAlignment="center"
+                android:textColor="#b30059"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/whitebox_with_border"
+                android:padding="10dp"
+                android:text="90 mg/dl"
+                android:textAlignment="center"
+                android:textColor="#2eb82e"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/whitebox_with_border"
+                android:padding="20dp"
+                android:text="After Eating"
+                android:textAlignment="center"
+                android:textColor="#b30059"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/whitebox_with_border"
+                android:padding="10dp"
+                android:text="175 mg/dl"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="#2eb82e"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottomleftcell"
+                android:padding="10dp"
+                android:text="2-3 Hours After\nEating"
+                android:textAlignment="center"
+                android:textColor="#b30059"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bottomrightcell"
+                android:padding="10dp"
+                android:text="130 mg/dl"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="#2eb82e"
+                android:textSize="20dp" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="650dp"
+        android:padding="20dp"
+        android:textSize="15dp"
+        android:background="@drawable/loginbutton"
+        android:text="Take Screenshot of the report"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="take_screenshot"/>
+
+    <ImageView
+        android:id="@+id/glucose_screenshot"
+        android:layout_width="93dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="680dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bluebox_main_menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

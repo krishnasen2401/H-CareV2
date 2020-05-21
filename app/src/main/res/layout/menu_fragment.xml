@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/backgroundcolor"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.menu.menu">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/gbt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/shadowbox"
+            android:drawableLeft="@drawable/glucose"
+            android:padding="15dp"
+            android:text="Glucose Monitor"
+            android:textAllCaps="false"
+            android:textColor="#b30059"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/vbt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/shadowbox"
+            android:drawableLeft="@drawable/video"
+            android:padding="15dp"
+            android:text="Smart Video Surveillance"
+            android:textAllCaps="false"
+            android:textColor="#b30059"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gbt" />
+
+        <Button
+            android:id="@+id/abt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/shadowbox"
+            android:drawableLeft="@drawable/appointments"
+            android:padding="15dp"
+            android:text="Appointments"
+            android:textAllCaps="false"
+            android:textColor="#b30059"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vbt" />
+
+        <Button
+            android:id="@+id/xraybt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/shadowbox"
+            android:drawableLeft="@drawable/xray"
+            android:padding="15dp"
+            android:text="X-Ray Diagnosis"
+            android:textAllCaps="false"
+            android:textColor="#b30059"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/abt" />
+
+        <Button
+            android:id="@+id/healthrecordbt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/shadowbox"
+            android:drawableLeft="@drawable/health"
+            android:padding="15dp"
+            android:text="My Health Records"
+            android:textAllCaps="false"
+            android:textColor="#b30059"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/xraybt" />
+
+        <Button
+            android:id="@+id/cardiacbt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/shadowbox"
+            android:drawableLeft="@drawable/heart"
+            android:padding="15dp"
+            android:text="My Cardiac Health"
+            android:textAllCaps="false"
+            android:textColor="#b30059"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/healthrecordbt" />
+
+        <Button
+            android:id="@+id/subscriptionsbt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/shadowbox"
+            android:drawableLeft="@drawable/subscription"
+            android:padding="15dp"
+            android:text="My Subscriptions"
+            android:textAllCaps="false"
+            android:textColor="#b30059"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardiacbt" />
+
+        <Button
+            android:id="@+id/aboutbt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/shadowbox"
+            android:drawableLeft="@drawable/medicalicon"
+            android:padding="15dp"
+            android:text="About the App"
+            android:textAllCaps="false"
+            android:textColor="#b30059"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subscriptionsbt" />
+
+        <Button
+            android:id="@+id/profilebt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/shadowbox"
+            android:drawableLeft="@drawable/profile"
+            android:padding="15dp"
+            android:text="Profile"
+            android:textAllCaps="false"
+            android:textColor="#b30059"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aboutbt" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
